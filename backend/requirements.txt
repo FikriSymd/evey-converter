@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pymupdf
+pikepdf
+pdf2docx
+python-docx
+pdfplumber
+openpyxl
+python-pptx
+img2pdf
+pillow
+weasyprint
+ocrmypdf

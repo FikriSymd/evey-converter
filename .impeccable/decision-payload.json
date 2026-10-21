@@ -1,0 +1,128 @@
+{
+  "title": "Pilih dunia visual evey-converter",
+  "question": "Roll meng-assign Depot Work-Board (the roll). Pertahankan, ambil alternatif, atau re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Depot Work-Board",
+      "kicker": "THE ROLL",
+      "lineage": "depot work-board / instrument panel",
+      "thesis": "PDF tool yang dibaca sebagai papan kerja dokumen: shell ink-on-paper yang tenang dan padat — header rail, job rail kiri, work area tengah, footer privacy. Menolak default kategori (hero centered + gradient + kartu rounded).",
+      "palette": ["#16181d", "#f4f1ea", "#e2543c", "#2e6b4f"],
+      "materials": ["ink on bone paper", "hairline rules (1px)", "split-flap state plates"],
+      "viewport": "Header rail (nama + nav, no gradient). Kiri: job rail daftar tools (merge/split/compress/convert) sebagai keyed list. Tengah: drop zone bone-paper besar, border dashed 1px, placeholder mono; tombol primary vermilion kotak (no pill); di bawahnya job board: kartu job yang flip state plate-nya (Uploaded → Processing → Done) dengan step 90ms dua-frame. Footer: hairline rule + garis privacy vermilion: 'files are deleted 1 hour after processing.'",
+      "risk": "Membaca seperti instrumen dingin kalau type-nya terlalu mekanik; harus tetap hangat di copy.",
+      "raised": [
+        {"from": "signals-instruments-split-flap-concourse", "raise": "Signature move: job status sebagai split-flap departure board — state plate (Uploaded → Processing → Done) flip dengan step tajam dua-frame, bukan fade."},
+        {"from": "rw-centre-rail-reference-setting", "raise": "Hairline ruling discipline: setiap border/divider/key line digambar 1 device pixel, shell jaga margin tenang + centre rail status key tipis."}
+      ]
+    },
+    {
+      "id": "challenger-splitflap",
+      "label": "Split-Flap Departure Board",
+      "kicker": "CHALLENGER",
+      "verdict": "competitive",
+      "lineage": "rail concourse split-flap boards",
+      "thesis": "Seluruh antarmuka sebagai papan keberangkatan: job = baris keberangkatan, status = flip-flap yang clack. Signature move-nya sangat kuat untuk status proses.",
+      "palette": ["#1a1a1a", "#f5efe0", "#e2543c", "#2e6b4f"],
+      "materials": ["split-flap tiles", "departure columns", "clack step motion"],
+      "viewport": "Header + job rail; work area sebagai papan keberangkatan: tiap file = satu baris dengan kolom status flip-flap; kolom aksi di kanan.",
+      "case": "Holds clarity: membaca seperti instrumen kerja; kalah di audience (papan transit, bukan dokumen). Signature move-nya diadopsi ke assigned.",
+      "risk": "Kostum transit kalau seluruh layout ikut papan; harus dibatasi ke status saja.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse.webp"
+    },
+    {
+      "id": "challenger-centrerail",
+      "label": "Centre-Rail Reference Setting",
+      "kicker": "CHALLENGER",
+      "verdict": "competitive",
+      "lineage": "reference-setting pages / wide-margin editions",
+      "thesis": "Dua kolom teks pendek mengelilingi rail kunci di tengah; margin lebar tempat aparatus menggantung. Disiplin hairline-nya diadopsi ke assigned.",
+      "palette": ["#111111", "#efe6d4", "#c93a1f"],
+      "materials": ["ruling engine hairlines", "unbleached bone", "rubric vermilion"],
+      "viewport": "Dua kolom measure pendek + centre rail kunci; margin annotation lebar; detent state sebagai mark.",
+      "case": "Holds clarity: halaman kerja nyata; kalah di audience (typesetting reference, bukan quick file tool).",
+      "risk": "Terlalu literer kalau margin dipakai berlebihan.",
+      "hero": "https://impeccable.style/worlds/cards/rw-centre-rail-reference-setting-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/rw-centre-rail-reference-setting.webp"
+    },
+    {
+      "id": "challenger-timetable",
+      "label": "Pocket Timetable Slide-Rack",
+      "kicker": "CHALLENGER",
+      "verdict": "declined",
+      "lineage": "1971 pocket airline timetables",
+      "thesis": "Rak slide kaca miring di atas bed goldenrod; satu ukuran type, rank dibawa weight/case. Menarik tapi kostum untuk tool kerja.",
+      "palette": ["#e8b84b", "#3a3f4a", "#f4f1ea", "#e2543c"],
+      "materials": ["tinted glass slides", "lit goldenrod bed", "rake 11deg"],
+      "viewport": "Rak slide lateral; tiap tool satu slide; tick rail posisi.",
+      "case": "Falls both axes: rake + one-size type merusak scanability daftar file; audience butuh clarity, bukan timetable 1971.",
+      "risk": "Kostum kalau rake dipakai; kontrol standar berkelahi dengan rake.",
+      "hero": "https://impeccable.style/worlds/cards/rw-timetable-slide-rack-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/rw-timetable-slide-rack.webp"
+    },
+    {
+      "id": "challenger-bitmap",
+      "label": "Emigre Bitmap Specimen",
+      "kicker": "CHALLENGER",
+      "verdict": "declined",
+      "lineage": "Emigre bitmap type specimens",
+      "thesis": "Letterform pixel kasar di poster scale; low-res = estetika. Legibilitas menurun = merusak job baca nama file.",
+      "palette": ["#f4f0e6", "#1a1a1a", "#d81e3c"],
+      "materials": ["bitmap display type", "halftone", "dot-matrix texture"],
+      "viewport": "Headline pixel raksasa; daftar file dalam specimen repetition.",
+      "case": "Falls both axes: degraded legibility langsung melukai tugas; bukan working tool.",
+      "risk": "Novelty retro kalau pixel type dipakai di body.",
+      "hero": "https://impeccable.style/worlds/cards/emigre-bitmap-specimen-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/emigre-bitmap-specimen.webp"
+    },
+    {
+      "id": "challenger-doujin",
+      "label": "Doujin Event Catalog",
+      "kicker": "CHALLENGER",
+      "verdict": "declined",
+      "lineage": "convention circle catalogs on newsprint",
+      "thesis": "Ribuan thumbnail square tangan dalam hall grid bernomor; nav lewat table code. Charming, tapi baca sebagai event catalog.",
+      "palette": ["#111111", "#f2f0ea", "#e2543c"],
+      "materials": ["newsprint", "biro circles", "postage-stamp thumbnails"],
+      "viewport": "Hall grid thumbnail; peta hall keyed ke kode.",
+      "case": "Falls both axes: navigasi table code tidak memetakan ke upload→proses→download.",
+      "risk": "Charming tapi bukan tool.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-doujin-event-catalog-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-doujin-event-catalog.webp"
+    },
+    {
+      "id": "challenger-jcard",
+      "label": "Cassette J-Card",
+      "kicker": "CHALLENGER",
+      "verdict": "declined",
+      "lineage": "vernacular cassette j-cards",
+      "thesis": "J-card tulis tangan ballpoint, side A/B hard halves, tracklist timed. Naratif kuat, tapi kostum untuk file tool.",
+      "palette": ["#1a1a1a", "#f4f1ea", "#2b5fbf", "#c8102e"],
+      "materials": ["ballpoint blue", "lined inlay stock", "TDK red / Maxell gold"],
+      "viewport": "Folded sheet; spine identity; side A/B flip.",
+      "case": "Falls both axes: tidak ada kontrol standar, tidak ada alur job.",
+      "risk": "Kostum kuat tanpa fungsi.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-cassette-j-card-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/vernacular-ephemera-cassette-j-card.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "Apa yang kategori ini ship, dieksekusi dengan craft penuh: hero centered + gradient + rounded card + emoji icon. Pintu keluar yang selalu tersedia.",
+    "palette": ["#ffffff", "#111827", "#2563eb"],
+    "materials": ["clean grid", "product photography", "gradient hero"],
+    "viewport": "Arrangement yang visitor harapkan, at full craft.",
+    "risk": "Indistinguishable from competition by design."
+  },
+  "steer": true
+}

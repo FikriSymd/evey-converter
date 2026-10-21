@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>evey-converter</title>
+  <meta name="description" content="Tools PDF yang jalan di server sendiri. File dihapus otomatis 1 jam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header-rail" role="banner">
+    <div class="rail-inner">
+      <a class="brand" href="/" aria-label="evey-converter">
+        <span class="brand-mark">evey</span><span class="brand-suffix">-converter</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi">
+        <a href="#tools" data-i18n="nav_tools">Tools</a>
+        <a href="#privacy" data-i18n="nav_privacy">Privasi</a>
+        <a href="#about" data-i18n="nav_about">Tentang</a>
+      </nav>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-pressed="false" title="Switch language">
+        <span data-lang-label>ID</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <!-- ===== LEFT RAIL: TOOL CATALOG ===== -->
+    <aside class="job-rail" aria-label="Katalog tool">
+      <div class="rail-head">
+        <span class="rail-head-label" data-i18n="rail_tools">TOOLS</span>
+        <span class="rail-head-count" data-tool-count>0</span>
+      </div>
+      <button class="rail-toggle" type="button" data-rail-toggle aria-expanded="false" aria-controls="tool-groups">
+        <span data-rail-toggle-label data-i18n="rail_toggle">Pilih tool</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <nav class="tool-groups" id="tool-groups" data-tool-groups aria-label="Daftar tool"></nav>
+      <div class="rail-foot">
+        <span class="rail-foot-label" data-i18n="rail_status">STATUS</span>
+        <span class="status-line"><span class="status-dot"></span><span data-status-text data-i18n="rail_idle">idle</span></span>
+      </div>
+    </aside>
+
+    <!-- ===== CENTER: WORK AREA ===== -->
+    <main class="work-area" id="tools">
+      <section class="tool-pane" aria-labelledby="pane-title">
+        <div class="pane-head">
+          <h1 id="pane-title" data-pane-title></h1>
+          <p class="pane-sub" data-pane-sub></p>
+        </div>
+
+        <!-- per-tool options (rendered by app.js) -->
+        <div class="tool-opts" data-tool-opts hidden></div>
+
+        <!-- drop zone -->
+        <div class="drop-zone" data-drop-zone role="button" tabindex="0" aria-label="Drop file atau tekan untuk pilih">
+          <input type="file" class="file-input" data-file-input multiple hidden>
+          <div class="drop-content">
+            <svg class="drop-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 15V3m0 0 4 4m-4-4L8 7"/>
+              <path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/>
+            </svg>
+            <p class="drop-main" data-drop-main></p>
+            <p class="drop-sub"><span data-i18n="drop_or">atau</span> <button type="button" class="link-btn" data-browse data-i18n="drop_browse">pilih file</button></p>
+            <p class="drop-limit" data-i18n="drop_limit">maks 50MB per file</p>
+          </div>
+        </div>
+
+        <!-- job board -->
+        <section class="job-board" aria-label="Daftar pekerjaan" data-job-board hidden>
+          <div class="board-head">
+            <span class="board-head-label" data-i18n="board_jobs">PEKERJAAN</span>
+            <button class="clear-btn" type="button" data-clear data-i18n="board_clear">Bersihkan</button>
+          </div>
+          <ul class="job-list" data-job-list></ul>
+        </section>
+
+        <!-- process -->
+        <div class="process-row">
+          <button class="btn-primary" type="button" data-process disabled data-i18n="process_btn">Proses</button>
+          <span class="process-hint" data-i18n="process_hint" hidden>File dihapus otomatis setelah diproses.</span>
+        </div>
+      </section>
+
+      <section class="privacy-band" id="privacy">
+        <div class="privacy-band-inner">
+          <span class="privacy-mark" aria-hidden="true">&#9650;</span>
+          <p class="privacy-text" data-i18n="privacy_text">File lu dihapus otomatis 1 jam setelah diproses. Nggak ada yang nyimpen.</p>
+        </div>
+      </section>
+
+      <section class="about-band" id="about">
+        <h2 class="about-title" data-i18n="about_title">Kenapa evey-converter?</h2>
+        <p class="about-body" data-i18n="about_body">Tool PDF online biasanya nyimpen file lu di server mereka. evey-converter jalan di server milik lu sendiri: file nggak pernah keluar dari kendali lu, dan dihapus permanen setelah 1 jam.</p>
+        <p class="about-meta"><span class="meta-label" data-i18n="about_ver">VERSI</span> <span>0.2.0 · prototype</span></p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer-rail" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-copy">evey-converter</span>
+      <span class="footer-privacy" data-i18n="footer_privacy">file dihapus 1 jam setelah diproses</span>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
